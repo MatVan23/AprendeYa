@@ -12,6 +12,7 @@ public class Pago {
 
     private Double monto;
 
+    @Column(columnDefinition = "text")
     private String qrImagen;
 
     private Boolean pagado = false;
