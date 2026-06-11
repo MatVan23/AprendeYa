@@ -8,11 +8,11 @@ async function registrar() {
     rol: document.getElementById("rol").value
   };
 
-  const res = await fetch(API, {
+ const res = await fetch(`${API}/usuarios`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body)
-  });
+});
 
   if (res.ok) {
     alert("Usuario registrado correctamente");
