@@ -1,5 +1,4 @@
-const API =
-"http://localhost:8082/api/solicitudes";
+const API = "https://aprendeya-backend.onrender.com/api";
 
 async function cargarSolicitudes(){
 

@@ -1,4 +1,4 @@
-const API = "http://localhost:8082/api";
+const API = "https://aprendeya-backend.onrender.com/api";
 let todosLosComentarios = [];
 
 async function cargarComentarios() {

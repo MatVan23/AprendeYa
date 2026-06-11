@@ -1,4 +1,4 @@
-const API = "http://localhost:8082/api/usuarios";
+const API = "https://aprendeya-backend.onrender.com/api";
 
 async function cargarUsuarios() {
   const res = await fetch(API);
