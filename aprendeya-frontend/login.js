@@ -10,7 +10,7 @@ async function login() {
 
   try {
 
-    const res = await fetch(`${API}/login`, {
+    const res = await fetch(`${API}/usuarios`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
