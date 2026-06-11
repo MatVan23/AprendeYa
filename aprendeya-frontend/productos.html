@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>AprendeYa - Clases</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container-wide">
+
+<h1>Clases Ofrecidas por Profesores</h1>
+
+<input
+type="text"
+id="buscar"
+placeholder="Buscar materia..."
+onkeyup="filtrarMaterias()">
+
+<div class="card">
+
+<input type="hidden" id="productoId">
+
+<input
+type="text"
+id="titulo"
+placeholder="Materia">
+
+<input
+type="text"
+id="descripcion"
+placeholder="Descripción de la clase">
+
+<input
+type="number"
+id="precio"
+placeholder="Precio por hora">
+
+<input
+type="text"
+id="categoria"
+placeholder="Área de estudio">
+
+<button onclick="guardarProducto()">
+Guardar Clase
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Materia</th>
+
+<th>Precio/Hora</th>
+
+<th>Área</th>
+
+<th>Estado</th>
+
+<th>Calificación</th>
+
+<th>Acciones</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaProductos"></tbody>
+
+</table>
+
+</div>
+
+<script src="productos.js"></script>
+
+</body>
+</html>

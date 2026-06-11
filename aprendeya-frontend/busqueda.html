@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Buscar Profesores</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container-wide">
+
+<h1>Buscar Profesor</h1>
+
+<input
+type="text"
+id="categoria"
+placeholder="Materia">
+
+<button onclick="buscar()">
+Buscar
+</button>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Materia</th>
+<th>Descripción</th>
+<th>Precio</th>
+</tr>
+
+</thead>
+
+<tbody id="tabla"></tbody>
+
+</table>
+
+</div>
+
+<script src="busqueda.js"></script>
+
+</body>
+</html>

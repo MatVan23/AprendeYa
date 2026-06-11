@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Administrador</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container-wide">
+
+<h1>Panel Administrador</h1>
+
+<div class="card">
+
+<button onclick="location.href='usuarios.html'">
+Gestionar Usuarios
+</button>
+
+<button onclick="location.href='productos.html'">
+Gestionar Profesores
+</button>
+
+<button onclick="location.href='solicitudes.html'">
+Gestionar Reservas
+</button>
+
+<button onclick="cerrarSesion()">
+Cerrar Sesión
+</button>
+
+</div>
+
+</div>
+
+<script>
+function cerrarSesion(){
+localStorage.removeItem("usuario");
+window.location.href="index.html";
+}
+</script>
+
+</body>
+</html>

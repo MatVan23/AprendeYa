@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comentarios - AprendeYa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container-wide">
+
+  <h1>💬 Comentarios de Estudiantes</h1>
+  <p style="text-align: center; margin-bottom: 28px;">Lo que dicen tus estudiantes sobre tus clases</p>
+
+  <div id="estadisticasComentarios" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px;">
+    <div class="card" style="text-align: center;">
+      <p style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Total Comentarios</p>
+      <p style="font-size: 36px; font-weight: bold; color: var(--primary); margin: 12px 0;" id="totalComentarios">0</p>
+      <p style="font-size: 14px; color: var(--text-muted);">Recibidos</p>
+    </div>
+    <div class="card" style="text-align: center;">
+      <p style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Con Texto</p>
+      <p style="font-size: 36px; font-weight: bold; color: var(--success); margin: 12px 0;" id="conTexto">0</p>
+      <p style="font-size: 14px; color: var(--text-muted);">Comentarios escritos</p>
+    </div>
+    <div class="card" style="text-align: center;">
+      <p style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Calificación promedio</p>
+      <p style="font-size: 36px; font-weight: bold; color: var(--warning); margin: 12px 0;" id="promedioComentarios">--</p>
+      <p style="font-size: 14px; color: var(--text-muted);">sobre 5</p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; align-items: center;">
+    <h2 style="margin: 0;">📋 Todos los Comentarios</h2>
+    <div style="margin-left: auto; display: flex; gap: 8px;">
+      <select id="filtroEstrellas" onchange="filtrarComentarios()" style="padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border-color);">
+        <option value="">⭐ Todos</option>
+        <option value="5">⭐⭐⭐⭐⭐ 5 estrellas</option>
+        <option value="4">⭐⭐⭐⭐ 4 estrellas</option>
+        <option value="3">⭐⭐⭐ 3 estrellas</option>
+        <option value="2">⭐⭐ 2 estrellas</option>
+        <option value="1">⭐ 1 estrella</option>
+      </select>
+      <select id="filtroTexto" onchange="filtrarComentarios()" style="padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border-color);">
+        <option value="">💬 Con y sin texto</option>
+        <option value="con">Solo con comentario</option>
+        <option value="sin">Solo sin comentario</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="listaComentarios" style="display: grid; gap: 16px;">
+    <p style="text-align: center; color: var(--text-muted);">Cargando comentarios...</p>
+  </div>
+
+  <p style="text-align: center; margin-top: 32px;">
+    <a href="dashboard-profesor.html">← Volver al Dashboard</a>
+  </p>
+
+</div>
+
+<script src="comentarios-profesor.js"></script>
+
+</body>
+</html>

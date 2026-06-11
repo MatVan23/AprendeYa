@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Clases - AprendeYa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container-wide">
+
+  <h1>Buscar Clases</h1>
+  <p style="text-align: center; margin-bottom: 24px;">Encuentra el profesor perfecto para ti</p>
+
+  <div class="card" style="margin-bottom: 28px;">
+    <div class="form-group">
+      <label for="busqueda">Buscar por Materia</label>
+      <input type="text" id="busqueda" placeholder="Ej: Matemáticas, Inglés, etc.">
+    </div>
+    <button onclick="buscarProfesores()" class="btn-primary">🔍 Buscar</button>
+  </div>
+
+  <div class="table-responsive">
+    <table id="tablaProfesores">
+      <thead>
+        <tr>
+          <th>Profesor</th>
+          <th>Materia</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Disponible</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="text-align: center; margin-top: 32px;">
+    <a href="dashboard-estudiante.html">← Volver al Dashboard</a>
+  </p>
+
+</div>
+
+<script src="buscar-profesores.js"></script>
+
+</body>
+</html>

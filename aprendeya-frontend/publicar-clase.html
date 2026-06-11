@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicar Clase - AprendeYa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container" style="max-width: 600px; margin-top: 20px;">
+
+  <h1>Publicar Nueva Clase</h1>
+  <p style="text-align: center; margin-bottom: 28px;">Ofrece tus conocimientos</p>
+
+  <div class="card">
+    <div class="form-group">
+      <label for="materia">Materia / Tema</label>
+      <input type="text" id="materia" placeholder="Ej: Matemáticas, Inglés, etc." required>
+    </div>
+
+    <div class="form-group">
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion" placeholder="Describe los contenidos y detalles de la clase" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="precio">Precio (Bs)</label>
+      <input type="number" id="precio" placeholder="Ej: 50" step="0.01" min="0" required>
+    </div>
+
+    <div class="form-group">
+      <label for="fechaHora">Fecha y Hora</label>
+      <input type="datetime-local" id="fechaHora" required>
+    </div>
+
+    <button onclick="guardarClase()" class="btn-primary">📝 Publicar Clase</button>
+    <div id="mensaje" class="error" style="display: none;"></div>
+
+    <p style="text-align: center; margin-top: 20px;">
+      <a href="dashboard-profesor.html">← Volver al Dashboard</a>
+    </p>
+  </div>
+
+</div>
+
+<script src="publicar-clase.js"></script>
+
+</body>
+</html>

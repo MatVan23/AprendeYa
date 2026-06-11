@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="styles.css">
+
+<div class="container">
+    <h2>📝 Crear Cuenta</h2>
+
+    <input id="nombre" placeholder="Nombre completo">
+    <input id="email" placeholder="Correo">
+    <input id="password" type="password" placeholder="Contraseña">
+
+    <button onclick="crear()">Registrar</button>
+
+    <span class="link" onclick="window.location='login.html'">
+        ¿Ya tienes cuenta? Inicia sesión
+    </span>
+</div>
+
+<script>
+function crear() {
+    fetch("/usuarios", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            nombre: nombre.value,
+            email: email.value,
+            password: password.value
+        })
+    })
+    .then(res => res.text())
+    .then(data => alert(data));
+}
+</script>

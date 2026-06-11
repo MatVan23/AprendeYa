@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>AprendeYa - Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container-wide">
+
+<h1>AprendeYa</h1>
+
+<div class="card">
+
+<h2>Menú Principal</h2>
+
+<p>Seleccione una opción:</p>
+
+<button onclick="location.href='usuarios.html'">
+Gestión de Usuarios
+</button>
+
+<button onclick="location.href='productos.html'">
+Profesores / Servicios
+</button>
+
+<button onclick="location.href='solicitudes.html'">
+Reserva de Clases
+</button>
+
+<button onclick="location.href='busqueda.html'">
+Buscar Profesores
+</button>
+
+<button onclick="cerrarSesion()">
+Cerrar Sesión
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function cerrarSesion(){
+localStorage.removeItem("usuario");
+window.location.href="index.html";
+}
+
+</script>
+
+</body>
+</html>

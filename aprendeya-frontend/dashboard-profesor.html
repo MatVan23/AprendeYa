@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Profesor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-wide">
+    <h1>Mi Dashboard</h1>
+    <p style="text-align: center; margin-bottom: 32px;">Bienvenido Profesor</p>
+    
+    <div class="menu-grid">
+      <div class="menu-card">
+        <a href="publicar-clase.html">
+          <span class="menu-card-icon">📝</span>
+          <span class="menu-card-title">Publicar Clase</span>
+          <span style="font-size: 12px; color: var(--text-muted);">Nueva clase</span>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="solicitudes-profesor.html">
+          <span class="menu-card-icon">📋</span>
+          <span class="menu-card-title">Solicitudes</span>
+          <span style="font-size: 12px; color: var(--text-muted);">Pendientes</span>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="mis-clases-profesor.html">
+          <span class="menu-card-icon">📚</span>
+          <span class="menu-card-title">Mis Clases</span>
+          <span style="font-size: 12px; color: var(--text-muted);">Horario</span>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="mis-pagos-profesor.html">
+          <span class="menu-card-icon">💳</span>
+          <span class="menu-card-title">Mis Pagos</span>
+          <span style="font-size: 12px; color: var(--text-muted);">QRs</span>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="calificaciones-profesor.html">
+          <span class="menu-card-icon">⭐</span>
+          <span class="menu-card-title">Calificaciones</span>
+          <span style="font-size: 12px; color: var(--text-muted);">Ver reseñas</span>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="comentarios-profesor.html">
+          <span class="menu-card-icon">💬</span>
+          <span class="menu-card-title">Comentarios</span>
+          <span style="font-size: 12px; color: var(--text-muted);">De estudiantes</span>
+        </a>
+      </div>
+      <div class="menu-card">
+        <a href="perfil-profesor.html">
+          <span class="menu-card-icon">👤</span>
+          <span class="menu-card-title">Mi Perfil</span>
+          <span style="font-size: 12px; color: var(--text-muted);">Editar</span>
+        </a>
+      </div>
+    </div>
+    
+    <p style="text-align: center; margin-top: 40px;">
+      <button class="btn-secondary" onclick="logout()">Cerrar Sesión</button>
+    </p>
+  </div>
+  <script>
+    function logout() {
+      localStorage.removeItem('user');
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

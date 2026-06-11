@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Registro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AprendeYa</h1>
+
+<div class="card">
+
+<h2>Crear Cuenta</h2>
+
+<input
+type="text"
+id="nombre"
+placeholder="Nombre completo">
+
+<input
+type="email"
+id="email"
+placeholder="Correo">
+
+<input
+type="password"
+id="password"
+placeholder="Contraseña">
+
+<select id="rol">
+
+<option value="ESTUDIANTE">
+Estudiante
+</option>
+
+<option value="PROFESOR">
+Profesor
+</option>
+
+</select>
+
+<button onclick="registrar()">
+Registrarse
+</button>
+
+<p id="mensaje"></p>
+
+<a href="index.html">
+Volver al Login
+</a>
+
+</div>
+
+</div>
+
+<script src="registro.js"></script>
+
+</body>
+</html>
